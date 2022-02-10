@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           CloudHealth Dark Theme
+@namespace      alex-way
+@version        1.0.0
+@description    A dark theme for CloudHealth
+@author         alex-way
+==/UserStyle== */
+
+@-moz-document domain("apps.cloudhealthtech.com") {
+    html {
+		filter: invert(86%) hue-rotate(180deg) brightness(105%) contrast(105%);
+		background: #222;
+	}
+	body {
+		background: #222;
+	}
+	img,
+	svg,
+	iframe, .navbar {
+		filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(105%);
+	}
+	.navbar-logo img, .navbar-menu svg, .dashboard-widget svg {
+		filter: invert(0%) hue-rotate(180deg) brightness(105%) contrast(105%);
+	}
+}
